@@ -61,13 +61,16 @@
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
-}
 
-.card-trip-infos .card-trip-user {
-  position: absolute;
-  right: 16px;
-  top: -20px;
-  width: 40px;
+  .rating-grey {
+    color: rgb(155, 155, 155);
+    font-size: 14px;
+  }
+
+  .rating-star {
+    color: #feb601;
+    font-size: 14px;
+  }
 }
 
 

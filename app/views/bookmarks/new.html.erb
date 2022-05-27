@@ -1,2 +1,14 @@
-<h1>Bookmarks#new</h1>
-<p>Find me in app/views/bookmarks/new.html.erb</p>
+<div class="banner d-flex align-items-center justify-content-center" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1536440136628-849c177e76a1);">
+  <div class="container text-center">
+    <h1>Create a Bookmark</h1>
+  </div>
+</div>
+
+<div class="container col-6 mt-5">
+<%= simple_form_for [@list, @bookmark] do |f| %>
+  <%= f.input :movie_id, collection: Movie.all %>
+  <%= f.input :comment %>
+  <%= link_to "Back", list_path(@list), class: "btn btn-primary"%>
+  <%= f.button :submit, class: "btn btn-primary" %>
+<% end %>
+</div>
