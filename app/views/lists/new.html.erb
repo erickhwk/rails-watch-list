@@ -7,6 +7,7 @@
 <div class="container col-6 mt-5">
 <%= simple_form_for @list do |f| %>
   <%= f.input :name %>
+  <%= f.input :image_url, as: :file %>
   <%= link_to "Back", lists_path, class: "btn btn-primary"%>
   <%= f.button :submit, class: "btn btn-primary" %>
 <% end %>

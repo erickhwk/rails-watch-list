@@ -51,6 +51,6 @@ gem 'rspec-rails', group: [ :test ]
 gem 'rails-controller-testing', group: [ :test ]
 
 gem "autoprefixer-rails", "10.2.5"
-gem "font-awesome-sass", "~> 5.15"
+gem "font-awesome-sass"
 gem "simple_form", github: "heartcombo/simple_form"
-gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'touch .env
+gem 'cloudinary', '~> 1.16.0'

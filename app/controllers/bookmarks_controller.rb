@@ -19,7 +19,7 @@ class BookmarksController < ApplicationController
   def destroy
       @bookmark = Bookmark.find(params[:id])
       @bookmark.destroy
-      redirect_to '/lists/show', :notice => "Your bookmark has been deleted"
+      redirect_to list_path(@bookmark.list)
   end
 
   private
