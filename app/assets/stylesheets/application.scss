@@ -11,3 +11,21 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  background-color: rgba(33,37,41,1);
+}
+
+h1, h2, p, label {
+  color: #fff;
+}
+
+.btn {
+  background-color: rgba(139,0,0,1);
+  border-color: rgba(139,0,0,1);
+
+  &:hover {
+    background-color: rgba(139,0,0,0.5);
+    border-color: rgba(139,0,0,0.5);
+  }
+}
