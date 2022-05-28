@@ -10,7 +10,7 @@
     <%= link_to 'Add a Bookmark', new_list_bookmark_path(@list), class: 'btn btn-primary my-3' %>
   </div>
   <div class="cards-trip mb-5">
-    <% @bookmarks.each do |bookmark| %>
+    <%# <% @bookmarks.each do |bookmark| %>
       <% @movies.each do |movie| %>
         <div class="card-trip">
           <img src="<%= movie.poster_url %>" />
@@ -20,12 +20,12 @@
               <p><%= movie.overview %></p>
             </div>
           </div>
-          <div class="card-trip-infos d-flex justify-content-between">
-          <p>❝</span> </i><%= bookmark.comment %></p>
-          <%= link_to '✕', bookmark_path(bookmark), method: :delete, class: 'delete_button' %>
-          </div>
+            <div class="card-trip-infos mt-3 d-flex justify-content-between">
+              <p><span>💬 </span><%= movie.bookmarks.last.comment %></p>
+              <%= link_to '✕', bookmark_path(@list), method: :delete, class: 'delete_button' %>
+            </div>
         </div>
       <% end %>
-    <% end %>
+    <%# <% end %>
   </div>
 </div>
